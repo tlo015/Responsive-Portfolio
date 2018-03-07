@@ -1,0 +1,315 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    background-image: url("../images/circles.png");
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* layout of all pages */
+
+.headerBackground{
+    background-color: #ffffff;
+    height: 74px;
+    border-bottom-style: solid;
+    border-width: 2px;
+    border-color: #dddddd;
+}
+
+#logo{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    background-color: #4aaaa5;
+    padding: 20px;
+    width: 225px;
+    margin-top: 0px;
+    float: left;
+}
+
+.navList{
+    width: 960px;
+    margin: auto;
+}
+
+nav{
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+    display: inline;
+    padding: 5px;
+    list-style-type: none;
+    padding: 30px 0px 20px 0px;
+    float: right;
+}
+
+nav a{
+    display: inline-block;
+    padding-left: 15px;
+}
+
+a:link, a:visited{
+    color: grey;
+    text-decoration: none;
+}
+
+.mainBody{
+    width: 960px;
+    margin: auto;
+    padding: 25px 0px;
+    flex: 1 0 auto;
+}
+
+h2{
+    color: #4aaaa5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.75em;
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+    padding-bottom: 25px;
+    border-bottom: 3px solid #dddddd;
+}
+
+.content{
+    background-color: #ffffff;
+    width: 650px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #dddddd;
+    padding: 5px 20px 20px 20px;
+    float: left;
+}
+
+.thick{
+    border-width: 2px;
+}
+
+h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+    color: #4aaaa5;
+    padding-bottom: 25px;
+    border-bottom: 2px solid #dddddd;
+}
+
+.connect{
+    background-color: #ffffff;
+    width: 270px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #dddddd;
+    padding: 5px 15px 5px 15px;
+    float: right;
+}
+
+.icon{
+    display: inline-block;
+    width: 32%;
+    height: auto;
+    padding: 5px;
+}
+
+.clearfix{
+    overflow: auto;
+}
+
+.footerBackground{
+    background-color: #4aaaa5;
+    height: 75px;
+    border-top-style: solid;
+    border-width: 1px;
+    border-color: #dddddd;
+    position: relative;
+    flex-shrink: 0;
+}
+
+footer{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #ffffff;
+    text-align: center;
+    padding: 40px 0px 30px 0px;
+    background-color: #666666;
+    width: 100%;
+    height: 65px;
+    position: absolute;
+    bottom: 0px;
+}
+
+
+/* about me page */
+.me{
+    width: 200px;
+    height: auto;
+    padding: 10px 10px 0px 0px;
+    float: left;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 150%;
+    padding-top: 10px;
+}
+
+/* form page */
+form{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#name, #email{
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ddd;
+}
+
+#message{
+    width: 100%;
+    height: 200px;
+    padding: 5px;
+    border: 1px solid #ddd;
+}
+
+input{
+    margin: 10px 0px 15px;
+}
+
+.submit{
+    background-color: #4aaaa5;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+}
+
+/* Portfolio content */
+.container1{
+    width: 48%;
+    position: relative;
+    float: left;
+}
+
+.container{
+    width: 48%;
+    position: relative;
+    float: right;
+}
+
+.game{
+    background-color: #4aaaa5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    color: #ffffff;
+    width: 100%;
+    padding: 20px;
+    position: absolute;
+    bottom: 35px;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    padding: 20px 0px;
+}
+
+
+/* Handheld */
+@media only screen and (max-width: 535px){
+    /* Navigation Bar*/
+    .headerBackground{
+        height: 175px;
+    }
+    .navList{
+        max-width: 90%;
+    }
+    nav{
+        float: left;
+    }
+    
+
+    /* Content */
+    .mainBody{
+        max-width: 90%;
+    }
+    .content{
+        max-width: 100%;
+    }
+    .connect{
+        max-width: 100%;
+        float: left;
+        margin-top: 20px;
+    }
+
+    /* Connect */
+    .icon{
+        width: 31%;
+    }
+    .game{
+        font-size: 10px;
+        padding: 10px;
+        bottom: 30px;
+    }
+}
+
+/* IPad */
+@media screen and (min-width: 536px) and (max-width:810px){
+/* Navigation Bar*/
+    .navList{
+        max-width: 90%;
+    }
+    
+    /* Content */
+    .mainBody{
+        max-width: 90%;
+    }
+    .content{
+        max-width: 100%;
+    }
+    .connect{
+        max-width: 100%;
+        float: left;
+        margin-top: 20px;
+    }
+}
+
+/* Large devices */
+@media screen and (min-width: 811px) and (max-width: 1000px){
+    /* Navigation Bar*/
+    .navList{
+        max-width: 90%;
+    }
+    
+    /* Content */
+    .mainBody{
+        max-width: 90%;
+    }
+    .content{
+        max-width: 68%;
+    }
+    .connect{
+        max-width: 28%;
+    }
+    .icon{
+        width: 31%;
+    }
+}
+
+
